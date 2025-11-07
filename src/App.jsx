@@ -5,7 +5,13 @@ import { Routes, Route, useNavigate } from 'react-router-dom';
 import { UserContext } from './contexts/UserContext';
 import * as workoutService from './services/workoutService';
 
-import NavBar from './components/NavBar.jsx'; 
+// Import Components
+import NavBar from './components/NavBar.jsx';
+import Landing from './components/Landing.jsx';
+import SignUpForm from './components/SignUpForm.jsx';
+import LoginForm from './components/LoginForm.jsx';
+import Dashboard from './components/Dashboard.jsx';
+import WorkoutList from './components/WorkoutList.jsx';
 
 const App = () => {
   const { user } = useContext(UserContext);
@@ -23,8 +29,6 @@ const App = () => {
     };
     if (user) fetchAllWorkouts();
   }, [user]);
-
-  // --- CRUD Handler Functions ---
 
   const handleAddWorkout = async (workoutFormData) => {
     try {
@@ -58,18 +62,17 @@ const App = () => {
 
   return (
     <>
-      <NavBar /> 
+      <NavBar />
       <Routes>
         <Route
           path="/"
-          element={user ? <h1>My Dashboard</h1> : <h1>Landing Page</h1>}
+          element={user ? <Dashboard /> : <Landing />}
         />
         {user ? (
           <>
             <Route
               path="/workouts"
-              element={<h1>Workout List Page</h1>}
-              // element={<WorkoutList workouts={workouts} />}
+              element={<WorkoutList workouts={workouts} />}
             />
             <Route
               path="/workouts/new"
@@ -91,13 +94,11 @@ const App = () => {
           <>
             <Route
               path="/signup"
-              element={<h1>Sign Up Form</h1>}
-              // element={<SignUpForm />}
+              element={<SignUpForm />}
             />
             <Route
               path="/login"
-              element={<h1>Login Form</h1>}
-              // element={<LoginForm />}
+              element={<LoginForm />}
             />
           </>
         )}
