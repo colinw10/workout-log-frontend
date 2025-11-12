@@ -4,6 +4,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 90vh; /* Make it fill the screen */
+  height: 90vh; 
   text-align: center;
 }

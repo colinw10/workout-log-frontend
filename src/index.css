@@ -7,12 +7,12 @@ html, body {
   margin: 0;
   height: 100%;
   overflow: hidden;
-  background-color: #f2f4f8;
+  background-color: rgba(0, 123, 255, 0.1); 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: sans-serif;
   --primary: #007bff;
-  --background: #f2f4f8;
+  --background: rgba(0, 123, 255, 0.1); 
   --card-background: white;
   --border: rgb(220, 220, 220);
 }
