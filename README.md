@@ -21,9 +21,9 @@ This full-stack MERN application was built as a project for General Assembly's S
 
 ## 💻 Technologies Used
 
-**Javascript**
-**CSS**
-**HTML**
+* **Javascript**
+* **CSS**
+* **HTML**
 
 **Front-End:**
 * **React**
