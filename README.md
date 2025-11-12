@@ -8,7 +8,7 @@ This full-stack MERN application was built as a project for General Assembly's S
 ![Screenshot of the app's landing page](./images/landing-page.png)
 
 ### My Workouts
-![Screenshot of the main workouts list](./images/workouts-list.png)
+![Screenshot of the main workouts list](./images/workout-list.png)
 
 ### Workout Details & Exercises
 ![Screenshot of the workout details and add exercise form](./images/workout-details.png)
