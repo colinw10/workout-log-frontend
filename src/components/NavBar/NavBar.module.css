@@ -1,4 +1,4 @@
-/* src/components/NavBar.module.css */
+/* src/components/NavBar/NavBar.module.css */
 
 .container {
   top: 0;
@@ -29,5 +29,11 @@
 }
 
 .container a {
-  color: var(--primary);
+  color: var(--primary); 
+  text-decoration: none;
+}
+
+.container > a h2 {
+  color: black;
+  margin: 0;
 }
