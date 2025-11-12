@@ -6,12 +6,14 @@ import { UserContext } from './contexts/UserContext';
 import * as workoutService from './services/workoutService';
 
 // Import Components
-import NavBar from './components/NavBar.jsx';
-import Landing from './components/Landing.jsx';
-import SignUpForm from './components/SignUpForm.jsx';
-import LoginForm from './components/LoginForm.jsx';
-import Dashboard from './components/Dashboard.jsx';
-import WorkoutList from './components/WorkoutList.jsx';
+import NavBar from './components/NavBar/NavBar.jsx';
+import Landing from './components/Landing/Landing.jsx';
+import SignUpForm from './components/SignUpForm/SignUpForm.jsx';
+import LoginForm from './components/LoginForm/LoginForm.jsx';
+import Dashboard from './components/Dashboard/Dashboard.jsx';
+import WorkoutList from './components/WorkoutList/WorkoutList.jsx';
+import WorkoutForm from './components/WorkoutForm/WorkoutForm.jsx';
+import WorkoutDetails from './components/WorkoutDetails/WorkoutDetails.jsx';
 
 const App = () => {
   const { user } = useContext(UserContext);
@@ -70,28 +72,27 @@ const App = () => {
         />
         {user ? (
           <>
+            {/* --- Protected Routes (User Only) --- */}
             <Route
               path="/workouts"
               element={<WorkoutList workouts={workouts} />}
             />
             <Route
               path="/workouts/new"
-              element={<h1>New Workout Form</h1>}
-              // element={<WorkoutForm handleAddWorkout={handleAddWorkout} />}
+              element={<WorkoutForm handleAddWorkout={handleAddWorkout} />}
             />
             <Route
               path="/workouts/:workoutId"
-              element={<h1>Workout Details Page</h1>}
-              // element={<WorkoutDetails handleDeleteWorkout={handleDeleteWorkout} />}
+              element={<WorkoutDetails handleDeleteWorkout={handleDeleteWorkout} />}
             />
             <Route
               path="/workouts/:workoutId/edit"
-              element={<h1>Edit Workout Form</h1>}
-              // element={<WorkoutForm handleUpdateWorkout={handleUpdateWorkout} />}
+              element={<WorkoutForm handleUpdateWorkout={handleUpdateWorkout} />}
             />
           </>
         ) : (
           <>
+            {/* --- Guest-Only Routes --- */}
             <Route
               path="/signup"
               element={<SignUpForm />}

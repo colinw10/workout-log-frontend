@@ -1,0 +1,54 @@
+/* src/components/SignUpForm/SignUpForm.module.css */
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the form */
+  padding: 28px 21px;
+}
+
+.container p {
+  margin: 0;
+  padding: 0px 0 10px;
+  color: red; /* Make errors red */
+}
+
+.container input,
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+}
+
+.container input {
+  margin: 7px 0px 14px 0px;
+}
+
+.container div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container label {
+  font-weight: 600;
+  margin: 7px 0px 0px 0px; /* Adjusted margin */
+}
+
+.container button {
+  color: white;
+  font-weight: 600;
+  background: var(--primary);
+  margin: 21px 0px 0px 0px;
+}
+
+.container button:disabled {
+  background-color: var(--border);
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid var(--primary);
+}

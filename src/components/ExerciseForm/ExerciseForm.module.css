@@ -1,0 +1,41 @@
+/* src/components/ExerciseForm.module.css */
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+  align-items: flex-end; 
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1rem;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; 
+  min-width: 100px;
+}
+
+.form label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.form button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 4px;
+  height: fit-content; 
+}
