@@ -5,13 +5,13 @@ This is an app to help you keep track of your personal workout logs so you can s
 This full-stack MERN application was built as a project for General Assembly's Software Engineering Immersive.
 
 ### Landing Page
-![Screenshot of the app's landing page](./screenshots/landing-page.png)
+![Screenshot of the app's landing page](./images/landing-page.png)
 
 ### My Workouts
-![Screenshot of the main workouts list](./screenshots/workouts-list.png)
+![Screenshot of the main workouts list](./images/workouts-list.png)
 
 ### Workout Details & Exercises
-![Screenshot of the workout details and add exercise form](./screenshots/workout-details.png)
+![Screenshot of the workout details and add exercise form](./images/workout-details.png)
 
 ## 🚀 Getting Started
 
