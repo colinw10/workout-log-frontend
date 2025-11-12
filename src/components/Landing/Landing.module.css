@@ -1,0 +1,9 @@
+/* src/components/Landing/Landing.module.css */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh; /* Make it fill the screen */
+  text-align: center;
+}
