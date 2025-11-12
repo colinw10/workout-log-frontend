@@ -1,9 +1,9 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect, useContext } from 'react';
-import * as workoutService from '../../services/workoutService';
-import { UserContext } from '../../contexts/UserContext';
+import * as workoutService from '../../services/workoutService'; 
+import { UserContext } from '../../contexts/UserContext'; 
 import styles from './WorkoutDetails.module.css';
-import ExerciseForm from '../ExerciseForm/ExerciseForm.jsx';
+import ExerciseForm from '../exerciseform/ExerciseForm.jsx'; 
 
 const WorkoutDetails = (props) => {
   const { workoutId } = useParams();
@@ -60,8 +60,6 @@ const WorkoutDetails = (props) => {
 
       <section className={styles.exercisesSection}>
         <h2>Exercises</h2>
-        <ExerciseForm handleAddExercise={handleAddExercise} />
-        
         {workout.exercises.length ? (
           <ul className={styles.exerciseList}>
             {workout.exercises.map((exercise) => (
@@ -76,6 +74,8 @@ const WorkoutDetails = (props) => {
         ) : (
           <p>No exercises added yet.</p>
         )}
+
+        <ExerciseForm handleAddExercise={handleAddExercise} />
       </section>
     </main>
   );
