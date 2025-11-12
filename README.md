@@ -20,11 +20,6 @@ This full-stack MERN application was built as a project for General Assembly's S
 * **Back-End API Repository:** [https://github.com/colinw10/workout-log-backend](https://github.com/colinw10/workout-log-backend)
 
 ## 💻 Technologies Used
-
-* **Javascript**
-* **CSS**
-* **HTML**
-
 **Front-End:**
 * **React**
 * **Vite** 
