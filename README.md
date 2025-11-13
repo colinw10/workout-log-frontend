@@ -1,4 +1,4 @@
-# Workout Log
+# My Workout Log
 
 This is an app to help you keep track of your personal workout logs so you can see how many days you worked out, how many exercises you did, how much weight you were using, and so that you can go back and repeat workouts in the future.
 

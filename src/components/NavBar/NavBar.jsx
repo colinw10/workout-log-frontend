@@ -14,7 +14,7 @@ const NavBar = () => {
   return (
     <nav className={styles.container}>
       <Link to="/">
-        <h2>Workout Log</h2>
+        <h2> My Workout Log</h2>
       </Link>
 
       {user ? (
